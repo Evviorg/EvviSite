@@ -1,0 +1,1 @@
+import{a as o}from"./axios-DzWr6d29.js";const s=o.create({baseURL:"https://evvisolutions.com",headers:{"Content-Type":"application/json"}});s.interceptors.request.use(e=>{const t=localStorage.getItem("jwtToken");return t&&(e.headers.Authorization=t),e},e=>Promise.reject(e));export{s as I};
