@@ -1,0 +1,1 @@
+import{a as o}from"./axios-DzWr6d29.js";const a=o.create({baseURL:"http://localhost:3000",headers:{"Content-Type":"application/json"}});a.interceptors.request.use(e=>{const t=localStorage.getItem("jwtToken");return t&&(e.headers.Authorization=t),e},e=>Promise.reject(e));export{a as I};
